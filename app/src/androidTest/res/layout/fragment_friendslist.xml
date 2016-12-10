@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fpactivity_imm_height"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:background="@color/color_pink">
+
+        <RelativeLayout
+            android:id="@+id/flFragment_rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/flFragment_rl"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" >
+
+            <TextView
+                android:id="@+id/flFragment_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="排行榜"
+                android:textColor="@color/background_white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/titlebar_linel"
+                android:layout_toLeftOf="@id/flFragment_tv_title"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"/>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/titlebar_liner"
+                android:layout_toRightOf="@id/flFragment_tv_title"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginTop="12dp"
+        android:background="@mipmap/friends_bg_rank">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp" >
+
+            <com.haoqu.meiquan.view.CircleImageView
+                android:id="@+id/flFragment_iv_headIcon"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/mractivity_head_icon"
+                app:civ_border_color="@color/background_white"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/flFragment_tv_friendsNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/flFragment_iv_headIcon"
+                android:text="好友人数："
+                android:textColor="@color/background_white"
+                android:textSize="12sp" />
+
+
+
+            <!--
+                      <ImageView
+                          android:id="@+id/flFragment_iv_inviteFriends"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignBottom="@id/flFragment_iv_headIcon"
+                          android:layout_alignLeft="@id/flFragment_tv_friendsNumber"
+                          android:src="@drawable/yaoqinghaoyou" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                android:layout_toRightOf="@id/flFragment_tv_friendsNumber"
+                android:background="@null"
+                android:src="@mipmap/friendlist_icon_tudou" />
+                -->
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/flFragment_bt_inviteFriends"
+            android:layout_width="72dp"
+            android:layout_height="24dp"
+            android:text="邀请好友"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dp"
+            android:layout_centerVertical="true"
+            style="@style/login_commit"/>
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:id="@+id/flFragment_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:background="@color/background_white"/>
+
+</LinearLayout>

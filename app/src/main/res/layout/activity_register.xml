@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haoqu.meiquan.activity.RegisterActivity" >
+	<RelativeLayout 
+	    android:id="@+id/rActivity_rl"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/fpactivity_imm_height"
+		android:fitsSystemWindows="true"
+		android:background="@color/color_pink">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+			android:layout_alignParentBottom="true">
+
+
+			<ImageView
+				android:id="@+id/rActivity_iv_back"
+				style="@style/actionbar_backarrow" />
+
+            <RelativeLayout
+                android:id="@+id/rActivity_rl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/rActivity_tv_codeRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邀请码注册"
+                    android:layout_centerVertical="true"
+					android:textSize="12sp"
+                    />
+                <View
+                    android:id="@+id/rActivity_v_line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/background_white"
+                    android:layout_alignLeft="@id/rActivity_tv_codeRegister"
+                    android:layout_alignRight="@id/rActivity_tv_codeRegister"
+                    />
+
+
+                <TextView
+                    android:id="@+id/rActivity_tv_noCodeRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/rActivity_tv_codeRegister"
+                    android:layout_marginLeft="40dp"
+                    android:text="无邀请注册"
+					android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:onClick="onClick" />
+
+                <View
+                    android:id="@+id/rActivity_v_line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/background_white"
+                    android:layout_alignLeft="@id/rActivity_tv_noCodeRegister"
+                    android:layout_alignRight="@id/rActivity_tv_noCodeRegister"
+                    />
+        </RelativeLayout>
+
+        </RelativeLayout>
+        
+        
+        
+        
+        
+    </RelativeLayout>
+	    
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/rActivity_viewPager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/rActivity_rl"
+	    android:background="@color/background_white">
+	    
+	</android.support.v4.view.ViewPager>
+
+	
+</RelativeLayout>

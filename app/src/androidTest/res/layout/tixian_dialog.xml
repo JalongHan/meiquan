@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/background_white" >
+
+    <TextView
+        android:id="@+id/mrActivity_dialog_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="#FF4444"
+        android:textSize="14sp"
+        android:text="温馨提示" />
+
+    <TextView
+        android:id="@+id/mrActivity_dialog_tipsContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mrActivity_dialog_tips"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="14sp"
+        android:text="      温馨提醒：申请提现的金额为100元~100000元之间的数字，最多到小数点后2位." />
+
+    <RelativeLayout
+        android:id="@+id/mrActivity_dialog_rl"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mrActivity_dialog_tipsContent"
+        android:layout_centerHorizontal="true" >
+
+        <EditText
+            android:id="@+id/mrActivity_tixian_sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:inputType="numberDecimal"
+            android:background="@null"
+            android:hint="请输入提现金额"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@id/mrActivity_tixian_sum"
+            android:layout_alignRight="@id/mrActivity_tixian_sum"
+            android:layout_below="@id/mrActivity_tixian_sum"
+            android:background="#898989" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/mrActivity_tixian_commit"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/mrActivity_dialog_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="确认提现"
+        style="@style/forgetpassword_commit" />
+    <View 
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/mrActivity_tixian_commit"/>
+
+</RelativeLayout>

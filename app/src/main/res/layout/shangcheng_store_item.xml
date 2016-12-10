@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/color_background_personfragment_listitem">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp">
+        <ImageView
+            android:id="@+id/scfragment_iv_mallpic"
+            android:layout_width="86dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/scfragment_tv_mallname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_pink"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toRightOf="@id/scfragment_iv_mallpic"
+            android:layout_marginLeft="24dp"/>
+        <TextView
+            android:id="@+id/scfragment_tv_malldesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_below="@id/scfragment_tv_mallname"
+            android:layout_alignLeft="@id/scfragment_tv_mallname"
+            android:text=""
+            android:textColor="@color/text_color_dark"
+            android:textSize="8sp"/>
+        <TextView
+            android:id="@+id/scfragment_tv_goodsNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品数 : "
+            android:textSize="10sp"
+            android:textColor="@color/text_color_dark"
+            android:layout_alignLeft="@id/scfragment_tv_mallname"
+            android:layout_marginTop="52dp"/>
+        <TextView
+            android:id="@+id/scfragment_tv_sps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/scfragment_tv_goodsNum"
+            android:layout_alignBaseline="@id/scfragment_tv_goodsNum"
+            android:text=""
+            android:textSize="10sp"
+            android:textColor="@color/text_color_dark"
+            />
+
+        <TextView
+            android:id="@+id/scfragment_tv_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/scfragment_tv_goodsNum"
+            android:layout_marginLeft="58dp"
+            android:layout_alignBaseline="@id/scfragment_tv_goodsNum"
+            android:text="月售 : "
+            android:textSize="10sp"
+            android:textColor="@color/text_color_dark"/>
+        <TextView
+            android:id="@+id/scfragment_tv_xl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/scfragment_tv_sales"
+            android:layout_alignBaseline="@id/scfragment_tv_sales"
+            android:text=""
+            android:textSize="10sp"
+            android:textColor="@color/text_color_dark"/>
+
+    </RelativeLayout>
+    <include layout="@layout/view_line_marginrl12"></include>
+</LinearLayout>

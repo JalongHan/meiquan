@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_dark_bg"
+    tools:context=".activity.ChangeInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/ciActivity_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fpactivity_imm_height"
+        android:background="@color/color_pink"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ciActivity_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <ImageView
+                android:id="@+id/ciActivity_iv_back"
+                style="@style/actionbar_backarrow" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/ciActivity_titlebar_text"
+                    style="@style/actionbar_textview"
+                    android:text="修改资料" />
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/ciActivity_titlebar_text"
+                    android:src="@mipmap/titlebar_linel" />
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/ciActivity_titlebar_text"
+                    android:src="@mipmap/titlebar_liner" />
+
+
+                <Button
+                    android:id="@+id/ciActivity_save"
+                    style="@style/login_commit"
+                    android:layout_width="48dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:textSize="12sp"
+                    android:text="保存"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ciActivity_changeHeadIcon"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/color_background_personfragment_listitem">
+
+        <include layout="@layout/view_line_nopadding"></include>
+
+        <TextView
+            android:id="@+id/ciActivity_tv_headicon"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="头像" />
+
+
+        <com.haoqu.meiquan.view.CircleImageView
+            android:id="@+id/ciActivity_iv_headIcon"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/mractivity_head_icon"
+            app:civ_border_color="@color/background_white"
+            app:civ_border_width="0dp" />
+
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <RelativeLayout
+        android:id="@+id/ciActivity_changeNickName"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/background_white">
+
+        <include layout="@layout/view_line_nopadding"></include>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/ciActivity_tv_nickName"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改昵称" />
+
+        <View
+            android:id="@+id/ciActivity_v_line1"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/ciActivity_tv_nickName"></View>
+
+
+        <EditText
+            android:id="@+id/ciActivity_tv_nickName_name"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ciActivity_v_line1"
+            android:hint="请输入昵称"
+            android:gravity="right|center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"/>
+
+
+
+    </RelativeLayout>
+    <include layout="@layout/view_line_nopadding"></include>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/ciActivity_changePassWord"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/background_white">
+
+        <include layout="@layout/view_line_nopadding"></include>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/ciActivity_tv_changepw"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码" />
+
+        <View
+            android:id="@+id/ciActivity_v_line2"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/ciActivity_tv_changepw"></View>
+
+
+        <EditText
+            android:id="@+id/ciActivity_et_changepw"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ciActivity_v_line2"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:gravity="right|center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"/>
+
+
+    </RelativeLayout>
+    <include layout="@layout/view_line_nopadding"></include>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="10sp"
+        android:textColor="@color/text_color_import"
+        android:text="    温馨提示:昵称不能包括特殊字符,不能超过八位且不能小于三位.密码不能小于六位,且不能超过十六位.密码为空时不修改密码."/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">美圈美业</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- activity_main中四个radiobutton的字 -->
+    <string name="mActivity_rb_1">个人店铺</string>
+    <string name="mActivity_rb_2">朋友圈</string>
+    <string name="mActivity_rb_3">总商城</string>
+    <string name="mActivity_rb_4">个人中心</string>
+    <string name="title_activity_welcomeactivity">Welcomeactivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_personage_register">PersonageRegisterActivity</string>
+
+    <!-- lActivityactivity中的字 -->
+    <string name="lActivity_loginPage">登陆页</string>
+    <string name="login">登陆</string>
+    <string name="account">持卡人手机</string>
+    <string name="passWord">输入密码</string>
+    <string name="iWantLoginStore">商户注册</string>
+    <string name="forgortPassWord">忘记密码</string>
+    <string name="acountHint">手机号码</string>
+    <string name="passWordHint">登陆密码</string>
+    <!-- riActivity中的字 -->
+    <string name="registerPage">注册页</string>
+    <!-- prActivity中的字 -->
+    <string name="title_activity_forget_pass_word">ForgetPassWordActivity</string>
+    <!-- fpActivity中的字 -->
+    <string name="fpActitivy_forgetpw_page">忘记密码页</string>
+    <string name="title_activity_classif_goodsy">ClassifGoodsyActivity</string>
+    <string name="title_activity_goos_details">GoosDetailsActivity</string>
+    <string name="title_activity_my_results">MyResultsActivity</string>
+    <string name="title_activity_my_bank">MyBankActivity</string>
+    <string name="title_activity_bind_bank">BindBankActivity</string>
+    <string name="title_activity_tixian_record">TixianRecordActivity</string>
+    <string name="title_activity_shang_pin_list">ShangPinListActivity</string>
+    <string name="title_activity_friend_share_page">FriendSharePageActivity</string>
+    <string name="title_activity_shangjia_list">ShangjiaListActivity</string>
+</resources>

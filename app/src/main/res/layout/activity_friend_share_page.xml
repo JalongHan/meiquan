@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_dark"
+    
+    tools:context="com.haoqu.meiquan.activity.FriendSharePageActivity" >
+	<RelativeLayout
+        android:id="@+id/fsActivity_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fpactivity_imm_height"
+        android:fitsSystemWindows="true"
+        android:background="@color/color_pink"
+        android:layout_alignParentTop="true" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+            <ImageView
+                android:id="@+id/fsActivity_iv_back"
+                style="@style/actionbar_backarrow" />
+
+            <TextView
+                android:id="@+id/fsActivity_tv_title"
+                android:text="邀请好友"
+                style="@style/actionbar_textview"
+                />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/titlebar_linel"
+                android:layout_toLeftOf="@id/fsActivity_tv_title"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"/>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/titlebar_liner"
+                android:layout_toRightOf="@id/fsActivity_tv_title"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/fsActivity_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fsActivity_share"
+        android:layout_below="@id/fsActivity_rl1" />
+    
+
+    <RelativeLayout
+        android:id="@+id/fsActivity_share"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_sharebutton">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/sharepic"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/sharepic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/sharepic"
+                android:text="点击将此页转发给好友"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/background_white" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_dark"
+
+    tools:context="com.haoqu.meiquan.activity.ShangPinListActivity" >
+
+    <RelativeLayout
+        android:id="@+id/spAcivity_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fpactivity_imm_height"
+        android:fitsSystemWindows="true"
+        android:background="@mipmap/background_titlebar" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <ImageView
+                android:id="@+id/spActivity_ib_back"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/back_arrow" />
+
+            <TextView
+                android:id="@+id/spActivity_tv_classify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="@color/background_white"
+                />
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/titlebar_linel"
+                android:layout_toLeftOf="@id/spActivity_tv_classify"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"/>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/titlebar_liner"
+                android:layout_toRightOf="@id/spActivity_tv_classify"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/spAcivity_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/title_dark" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            xmlns:ptr="http://schemas.android.com/apk/com.haoqu.fxmall"
+            android:id="@+id/pull_refresh_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="100dp"
+            android:gravity="fill"
+            android:horizontalSpacing="5dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"
+            ptr:ptrDrawable="@mipmap/default_ptr_rotate"
+            ptr:ptrMode="both" />
+    </RelativeLayout>
+
+</RelativeLayout>

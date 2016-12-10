@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_bg"
+    android:orientation="vertical"
+    tools:context="com.haoqu.meiquan.activity.MyResultsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fpactivity_imm_height"
+        android:background="@color/color_pink"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/mrActivity_rl"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/mrActivity_iv_back"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/back_arrow" />
+
+            <TextView
+                android:id="@+id/mrActivity_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="我的业绩"
+                android:textColor="@color/background_white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@id/mrActivity_tv_title"
+                android:src="@mipmap/titlebar_linel" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/mrActivity_tv_title"
+                android:src="@mipmap/titlebar_liner" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginTop="12dp"
+        android:background="@mipmap/friends_bg_rank">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp">
+
+            <com.haoqu.meiquan.view.CircleImageView
+                android:id="@+id/mrActivity_iv_headIcon"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/mractivity_head_icon"
+                app:civ_border_color="@color/background_white"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/mrActivity_tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/mrActivity_iv_headIcon"
+                android:text="你是一条鱼"
+                android:textColor="@color/background_white"
+                android:textSize="10sp" />
+
+
+
+            <TextView
+                android:id="@+id/mrActivity_tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/mrActivity_tv_nickname"
+                android:text="余额"
+                android:textColor="@color/background_white"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/mrActivity_bt_tixian"
+            style="@style/login_commit"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:textSize="10sp"
+            android:text="提现" />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/mrActivity_rl_income"
+        android:layout_width="match_parent"
+        android:layout_height="24dp">
+
+        <ImageView
+            android:id="@+id/mrActivity_iv_moneyicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/mractivity_moneyicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/mrActivity_iv_moneyicon"
+            android:text="收入明细"
+            android:textColor="@color/text_color_import"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mrActivity_rl_detail"
+        android:layout_width="match_parent"
+        android:layout_height="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:background="@color/color_getsmscode_bg"
+            android:orientation="horizontal"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="商品名称"
+                android:textColor="@color/background_white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="销售价格"
+                android:textColor="@color/background_white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="佣金"
+                android:textColor="@color/background_white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="类型"
+                android:textColor="@color/background_white"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mrActivity_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+
+</LinearLayout>

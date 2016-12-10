@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--注册actionbar的背景色-->
+    <color name="color_pink">#DA516C</color>
+
+    <!--注册页背景色-->
+    <color name="color_dark_bg">#F6F7F7</color>
+    <!--注册页,灰色线的颜色 -->
+    <color name="color_dark">#9F9FA0</color>
+
+    <!--注册页,灰色提示字体 -->
+    <color name="text_color_dark">#B4B5B5</color>
+
+    <!--重要字体颜色-->
+    <color name="text_color_import">#595959</color>
+
+    <!--注册页获取验证码的颜色-->
+    <color name="color_getsmscode_bg">#4DDA516C</color>
+
+    <!-- 银行卡的蓝色背景 -->
+    <color name="activity_login_bk_blue">#1F69A6</color>
+    <!-- 黄色 -->
+    <color name="ractivity_title_yellow">#EBD452</color>
+    <!--灰色忘记密码页面设置新密码字体颜色 -->
+    <color name="background_text_dark">#767676</color>
+    <!--首页底部导航栏背景色颜色 -->
+    <color name="background_main_dark">#383736</color>
+    <!--灰色忘记密码页,按钮底色-->
+    <color name="background_button_commitsmscode">#C0C6CB</color>
+    <!--忘记密码页提交按钮strke-->
+    <color name="commit_border">#424565</color>
+    <!--忘记密码页提交按钮按下的颜色-->
+    <color name="commit_pressed">#99DA516C</color>
+    <!--注册页当未选中时title的颜色-->
+    <color name="register_title_nochose">#DCE2E7</color>
+    <!--登陆页登陆按钮背景色45%白-->
+    <color name="login_button_background">#73FFFFFF</color>
+
+    <!--登陆页登陆按钮背景色-->
+    <color name="login_button_background_pressed">#99FFFFFF</color>
+
+    <!--登陆页账号密码背景色20%白-->
+    <color name="bg_white_perthirty">#33FFFFFF</color>
+
+
+    
+    <color name="ractivity_title_darkyellow">#887F3C</color>
+    <color name="ractivity_title_darkdarkyellow">#7C6611</color>
+    <color name="ractivity_title_yellow_pressed">#7E712B</color>
+    <color name="invitefriends_yellow">#F8B62B</color>
+    <color name="invitefriends_yellow_pressed">#856127</color>
+    <color name="invitefriends_text_pressed">#856F40</color>
+    <color name="ractivity_title_black">#000000</color>
+    <color name="title_dark">#EEEFEF</color>
+    <color name="background_white">#ffffff</color>
+    <color name="invitefriends_pressed">#91895B</color>
+    <color name="text_black">#000000</color>
+    <color name="backgroundforgetpassword_btcommit">#383635</color>
+    <color name="backgroundforgetpassword_btcommit_pressed">#1C1C1A</color>
+    <!-- 头像边框的半透明 -->
+    <color name="headicon_translucence">#50ffffff</color>
+</resources>

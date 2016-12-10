@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haoqu.meiquan.view.ShangPinConnersView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_background_shangpinlist_item">
+
+
+    <ImageView
+        android:id="@+id/spActivity_iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spActivity_iv_pic">
+
+
+        <TextView
+            android:id="@+id/spActivity_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/psfragment_iv_thumb"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="@color/color_pink" />
+
+        <TextView
+            android:id="@+id/spActivity_tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/spActivity_tv_title"
+            android:layout_below="@id/spActivity_tv_title"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/text_color_dark"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/spActivity_tv_specialPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/spActivity_tv_title"
+            android:layout_marginTop="56dp"
+            android:text="特价 : ¥ "
+            android:textColor="@color/color_pink"
+            android:paddingBottom="5dp"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/spActivity_tv_prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/spActivity_tv_specialPrice"
+            android:layout_toRightOf="@id/spActivity_tv_specialPrice"
+            android:text=""
+            android:textColor="@color/color_pink"
+            android:textSize="13sp"
+
+            />
+
+        <TextView
+            android:id="@+id/spActivity_tv_costPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/spActivity_tv_specialPrice"
+            android:layout_marginLeft="58dp"
+            android:layout_toRightOf="@id/spActivity_tv_specialPrice"
+            android:text="原价 : "
+            android:textColor="@color/text_color_dark"
+            android:textSize="9sp" />
+
+
+        <TextView
+            android:id="@+id/spActivity_tv_yuanjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/text_color_dark"
+            android:layout_toRightOf="@id/spActivity_tv_costPrice"
+            android:layout_alignBaseline="@id/spActivity_tv_costPrice"
+            android:textSize="9sp"/>
+
+
+    </RelativeLayout>
+
+
+</com.haoqu.meiquan.view.ShangPinConnersView>

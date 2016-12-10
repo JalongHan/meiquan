@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fpactivity_imm_height">69dp</dimen>
+    <dimen name="flfragment_imm_height">209dp</dimen>
+    <dimen name="mcfragment_imm_height">115dp</dimen>
+
+    <dimen name="psfragment_imm_height">25dp</dimen>
+</resources>

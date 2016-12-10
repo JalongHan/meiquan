@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haoqu.meiquan.activity.MyBankActivity" >
+
+    <RelativeLayout
+        android:id="@+id/mbAcivity_rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fpactivity_imm_height"
+        android:fitsSystemWindows="true"
+        android:background="@color/color_pink" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <ImageView
+                android:id="@+id/mbActivity_iv_back"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/back_arrow" />
+
+            <TextView
+                android:id="@+id/mbActivity_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="我的银行卡"
+                android:textColor="@color/background_white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/titlebar_linel"
+                android:layout_toLeftOf="@id/mbActivity_tv_title"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"/>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/titlebar_liner"
+                android:layout_toRightOf="@id/mbActivity_tv_title"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/color_dark_bg" >
+	
+        
+        <ImageView 
+			    android:id="@+id/mbActivity_nobankcard"
+			    android:layout_width="wrap_content"
+			    android:layout_height="115dp"
+                android:layout_gravity="center"
+			    android:src="@mipmap/mybank_nobankcard"
+			    />
+        <RelativeLayout
+            android:id="@+id/mbActivity_rl_bankInfo"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:background="@drawable/background_yuanjiao_bule"
+            android:visibility="visible"
+             >
+			
+            <ImageView
+                android:id="@+id/mbActivity_bank_icon"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="17dp"
+                android:src="@mipmap/mbactivity_bank1" />
+
+            <TextView
+                android:id="@+id/mbActivity_tv_bankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/mbActivity_bank_icon"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="9dp"
+                android:layout_toRightOf="@id/mbActivity_bank_icon"
+                android:text="建设银行"
+                android:textColor="@color/background_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mbActivity_tv_cardType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mbActivity_tv_bankName"
+                android:layout_below="@+id/mbActivity_tv_bankName"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/mbActivity_bank_icon"
+                android:text="储蓄卡"
+                android:textColor="@color/background_white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/mbActivity_tv_cardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mbActivity_tv_bankName"
+                android:layout_below="@+id/mbActivity_bank_icon"
+                android:layout_marginTop="19dp"
+                android:layout_toRightOf="@id/mbActivity_bank_icon"
+                android:text="**** **** ****"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/mbActivity_tv_shortCardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/mbActivity_tv_cardNumber"
+                android:layout_marginRight="38dp"
+                android:layout_alignParentRight="true"
+                android:text="1235"
+                android:textColor="@color/background_white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mbActivity_rl_bindBank"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/color_background_oddbankcard" >
+
+            <ImageView
+                android:id="@+id/mbActivity_iv_jiahao"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/jiahao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@id/mbActivity_iv_jiahao"
+                android:text="添加银行卡"
+                android:textColor="@color/background_white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mbActivity_rl_unBindBank"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/color_background_relievebankcard"
+            android:visibility="visible"
+            >
+
+            <ImageView
+                android:id="@+id/mbActivity_iv_jianhao"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/jianhao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@id/mbActivity_iv_jianhao"
+                android:text="解除银行卡绑定"
+                android:textColor="@color/background_white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

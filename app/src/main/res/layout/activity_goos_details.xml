@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_dark"
+    android:orientation="vertical"
+    tools:context="com.haoqu.meiquan.activity.GoosDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/gdActivity_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fpactivity_imm_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_pink"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <ImageView
+                android:id="@+id/gdActivity_iv_back"
+                style="@style/actionbar_backarrow" />
+
+            <TextView
+                android:id="@+id/gdActivity_tv_title"
+                android:text=""
+                style="@style/actionbar_textview" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@id/gdActivity_tv_title"
+                android:src="@mipmap/titlebar_linel" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/gdActivity_tv_title"
+                android:src="@mipmap/titlebar_liner" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/gdActivity_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/gdActivity_share"
+        android:layout_below="@id/gdActivity_rl1" />
+
+    <RelativeLayout
+        android:id="@+id/gdActivity_share"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_sharebutton">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/sharepic"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/sharepic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/sharepic"
+                android:text="分享到微信或朋友圈直接购买"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/background_white" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

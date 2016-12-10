@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_bg"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:layout_marginTop="12dp"
+        android:background="@color/background_white">
+
+        <include layout="@layout/view_line_nopadding"></include>
+
+        <TextView
+            android:id="@+id/crFragment_tv_phone"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account" />
+
+
+        <View
+            android:id="@+id/crFragment_v_line1"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/crFragment_tv_phone"></View>
+
+        <EditText
+            android:id="@+id/crFragment_phoneNumber"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/crFragment_v_line1"
+            android:hint="@string/acountHint"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white">
+
+        <TextView
+            android:id="@+id/crFragment_tv_smsCode"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码" />
+
+
+        <View
+            android:id="@+id/crFragment_v_line2"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"></View>
+
+
+        <Button
+            android:id="@+id/crFragment_bt_getTestCode"
+            style="@style/get_SMS_Button"
+            android:layout_width="99dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true" />
+
+
+        <EditText
+            android:id="@+id/crFragment_et_testCode"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/crFragment_bt_getTestCode"
+            android:layout_toRightOf="@id/crFragment_v_line2"
+            android:hint="请输入验证码"
+            android:inputType="number"></EditText>
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:layout_marginTop="12dp"
+        android:background="@color/background_white">
+        <include layout="@layout/view_line_nopadding"></include>
+        <TextView
+            android:id="@+id/crFragment_tv_passWord"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入密码" />
+
+
+        <View
+            android:id="@+id/crFragment_v_line3"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"></View>
+
+
+        <EditText
+            android:id="@+id/crFragment_passWord_input1"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/crFragment_v_line3"
+            android:hint="@string/passWordHint"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white">
+
+        <TextView
+            android:id="@+id/crFragment_tv_passWord1"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码" />
+
+
+        <View
+            android:id="@+id/crFragment_v_line31"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"></View>
+
+
+        <EditText
+            android:id="@+id/crFragment_passWord_input"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/crFragment_v_line31"
+            android:hint="@string/passWordHint"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:layout_marginTop="12dp"
+        android:background="@color/background_white">
+        <include layout="@layout/view_line_nopadding"></include>
+        <TextView
+            android:id="@+id/crFragment_tv_inviteCode"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请码" />
+
+
+        <View
+            android:id="@+id/crFragment_v_line4"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"></View>
+
+        <EditText
+            android:id="@+id/crFragment_et_inviteCode"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/crFragment_v_line4"
+            android:hint="请输入邀请码"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+
+    <Button
+        android:id="@+id/crFragment_bt_commit"
+        style="@style/forgetpassword_commit"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="33dp" />
+
+</LinearLayout>

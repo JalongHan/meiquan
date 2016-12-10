@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:orientation="vertical"
+
+    tools:context="com.haoqu.meiquan.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+
+        android:background="@color/color_dark_bg"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/main_rl_personstore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_iv_personstore"
+                style="@style/main_button_iv"
+
+                android:src="@drawable/main_bt_personstore" />
+
+            <TextView
+                android:id="@+id/main_tv_personstore"
+                style="@style/main_button_tv"
+                android:layout_below="@id/main_iv_personstore"
+                android:text="店铺" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_iv_friends"
+                style="@style/main_button_iv"
+                android:src="@drawable/main_bt_friends" />
+
+            <TextView
+                android:id="@+id/main_tv_friends"
+                style="@style/main_button_tv"
+                android:layout_below="@id/main_iv_friends"
+                android:text="排行榜" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_iv_store"
+                style="@style/main_button_iv"
+                android:src="@drawable/main_bt_mainstore" />
+
+            <TextView
+                android:id="@+id/main_tv_store"
+                style="@style/main_button_tv"
+                android:layout_below="@id/main_iv_store"
+                android:text="美圈街" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/main_rl_mycneter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_iv_mycneter"
+                style="@style/main_button_iv"
+
+                android:src="@drawable/main_bt_mycneter" />
+
+            <TextView
+                android:id="@+id/main_tv_mycneter"
+                style="@style/main_button_tv"
+                android:layout_below="@id/main_iv_mycneter"
+                android:text="我" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

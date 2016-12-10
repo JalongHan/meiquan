@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:background="@drawable/color_background_personfragment_listitem">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <TextView
+            android:id="@+id/tractivity_user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="+"
+            android:textColor="@color/text_color_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tractivity_tixiansum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tractivity_user"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="111.00元"
+            android:textColor="@color/color_pink"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tractivity_tixianday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="2016-16-12"
+            android:textColor="@color/text_color_dark"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tractivity_tixianstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="申请中"
+            android:textColor="@color/text_red"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+</LinearLayout>

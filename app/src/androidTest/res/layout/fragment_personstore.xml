@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/fpActivity_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fpactivity_imm_height"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:background="@mipmap/background_titlebar">
+        <RelativeLayout
+            android:id="@+id/flFragment_rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/psfragment_imm_height"></RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/fpActivity_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/titlebar_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="首页"
+                    android:textColor="@color/background_white"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/titlebar_linel"
+                    android:layout_toLeftOf="@id/titlebar_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"/>
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/titlebar_liner"
+                    android:layout_toRightOf="@id/titlebar_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"/>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+<!-- 	
+	<RelativeLayout 
+	    android:id="@+id/psFragment_rl"
+	    android:layout_width="match_parent"
+	    android:layout_height="36dp"
+	    android:background="@color/title_dark"
+	    >
+
+	    <TextView 
+	        android:id="@+id/psFragment_tv_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:text="个人店铺"
+	        android:textSize="18sp"
+	        android:textColor="#000000"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"/>
+	    
+	</RelativeLayout>
+	
+ -->	
+    <ListView
+        android:id="@+id/psFragment_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" >
+    </ListView>
+
+</LinearLayout>

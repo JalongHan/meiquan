@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mcfragment_to_changeinfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mcfragment_title_height"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mcfragment_imm_height"
+            android:background="@mipmap/background_mycenter">
+
+            <RelativeLayout
+                android:id="@+id/mcFragment_rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/psfragment_imm_height"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/mcfragment_tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="@dimen/mcfragment_nickname_height"
+                    android:text=""
+                    android:textColor="@color/background_white"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="@dimen/mcfragment_nickname_height"
+                    android:text="请修改资料  >"
+                    android:textColor="@color/background_white"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.haoqu.meiquan.view.CircleImageView
+            android:id="@+id/mcFragment_iv_headIcon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/mractivity_head_icon"
+            app:civ_border_color="@color/background_white"
+            app:civ_border_width="3dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp">
+
+        <RelativeLayout
+            android:id="@+id/mcFragment_rl_cleancache"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/color_background_mycenter_item">>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/mcFragment_cleancache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/cleancache" />
+
+                <TextView
+                    style="@style/fragmentmycenter_textview_sytle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mcFragment_cleancache"
+                    android:text="清除缓存" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/mcFragment_tixianRecord"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="19dp"
+            android:layout_toRightOf="@id/mcFragment_rl_cleancache"
+            android:background="@drawable/color_background_mycenter_item">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/mcFragment_tixian_tikuanjilu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/tixian" />
+
+                <TextView
+                    style="@style/fragmentmycenter_textview_sytle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mcFragment_tixian_tikuanjilu"
+                    android:text="提现记录" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/mcFragment_myIncome"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/mcFragment_rl_cleancache"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/color_background_mycenter_item">>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+
+                <ImageView
+                    android:id="@+id/mcFragment_tixian_wodeyeji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/wodeyeji" />
+
+                <TextView
+                    style="@style/fragmentmycenter_textview_sytle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mcFragment_tixian_wodeyeji"
+                    android:text="我的业绩" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/mcFragment_myBankCards"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/mcFragment_tixianRecord"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@id/mcFragment_myIncome"
+            android:background="@drawable/color_background_mycenter_item">>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/mcFragment_tixian_yinhangka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/yinhangka" />
+
+                <TextView
+                    style="@style/fragmentmycenter_textview_sytle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mcFragment_tixian_yinhangka"
+                    android:text="我的银行卡" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/mcFragment_logOut"
+            android:layout_width="216dp"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            style="@style/forgetpassword_commit"
+            android:layout_above="@id/space"
+            android:gravity="center"
+            android:text="退出登录" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

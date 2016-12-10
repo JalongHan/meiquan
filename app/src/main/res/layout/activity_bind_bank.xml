@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_dark_bg"
+    tools:context="com.haoqu.meiquan.activity.BindBankActivity">
+
+    <RelativeLayout
+        android:id="@+id/bbActivity_rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fpactivity_imm_height"
+        android:background="@color/color_pink"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <ImageView
+                android:id="@+id/bbActivity_iv_back"
+                style="@style/actionbar_backarrow" />
+
+            <TextView
+                android:id="@+id/bbActivity_tv_title"
+                android:text="添加银行卡"
+                style="@style/actionbar_textview" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@id/bbActivity_tv_title"
+                android:src="@mipmap/titlebar_linel" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/bbActivity_tv_title"
+                android:src="@mipmap/titlebar_liner" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white"
+        android:layout_marginTop="12dp">
+
+        <include
+            android:id="@+id/bindbank_line1"
+            layout="@layout/view_line_nopadding" />
+
+        <TextView
+            android:id="@+id/bbActivity_tv_bankbank"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开户行" />
+
+
+        <View
+            android:id="@+id/bbActivity_v_line1"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"></View>
+
+
+        <ImageView
+            android:id="@+id/bbActivity_iv_choseBank"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/bindbank_line1"
+            android:padding="8dp"
+            android:src="@mipmap/arrowdown"
+            android:background="@drawable/color_background_getsmscode"/>
+
+
+        <EditText
+            android:id="@+id/bbActivity_et_bankName"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/bbActivity_iv_choseBank"
+            android:layout_toRightOf="@id/bbActivity_v_line1"
+            android:hint="请选择开户行"
+            android:enabled="false">
+
+
+        </EditText>
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white">
+
+
+        <TextView
+            android:id="@+id/bbActivity_tv_realName"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开户人姓名" />
+
+
+        <View
+            android:id="@+id/bbActivity_v_line2"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/bbActivity_tv_realName"></View>
+
+        <EditText
+            android:id="@+id/bbActivity_et_realName"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/bbActivity_v_line2"
+            android:hint="请输入开户人姓名"
+            android:inputType="text">
+            <requestFocus/>
+        </EditText>
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white"
+        android:layout_marginTop="12dp">
+
+        <include layout="@layout/view_line_nopadding"></include>
+
+        <TextView
+            android:id="@+id/bbActivity_tv_bankId"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡号" />
+
+
+        <View
+            android:id="@+id/bbActivity_v_line3"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/bbActivity_tv_bankId"></View>
+
+        <EditText
+            android:id="@+id/bbActivity_et_bankId"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/bbActivity_v_line3"
+            android:hint="请输入银行卡号"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white">
+
+
+        <TextView
+            android:id="@+id/bbActivity_tv_reBankId"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认银行卡" />
+
+
+        <View
+            android:id="@+id/bbActivity_v_line4"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/bbActivity_tv_reBankId"></View>
+
+        <EditText
+            android:id="@+id/bbActivity_et_reBankId"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/bbActivity_v_line4"
+            android:hint="请再次确认银行卡号"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white"
+        android:layout_marginTop="12dp">
+
+        <include layout="@layout/view_line_nopadding"></include>
+
+        <TextView
+            android:id="@+id/bbActivity_tv_bankName"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开卡行地址" />
+
+
+        <View
+            android:id="@+id/bbActivity_v_line5"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/bbActivity_tv_bankName"></View>
+
+        <EditText
+            android:id="@+id/bbActivity_et_bankbank"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/bbActivity_v_line5"
+            android:hint="请输入开卡行详细地址"
+            android:inputType="text" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+
+    <Button
+        android:id="@+id/bbActivity_ib_bindBank"
+        style="@style/forgetpassword_commit"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="33dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+</LinearLayout>
+

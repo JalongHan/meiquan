@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_bg"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white"
+        android:layout_marginTop="12dp"
+        >
+        <include
+            android:id="@+id/line1"
+            layout="@layout/view_line_nopadding"></include>
+        <TextView
+            android:id="@+id/nrFragment_tv_choseCity"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择城市" />
+
+        <View
+            android:id="@+id/nrFragment_v_line1"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/nrFragment_tv_choseCity"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/nrFragment_v_line1"
+            android:layout_below="@id/line1"
+            >
+
+        <RelativeLayout
+            android:id="@+id/nrFragment_sp_province"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:background="@drawable/color_background_register_popuwindow"
+            android:onClick="onClick">
+
+
+            <ImageView
+                android:id="@+id/arrowdown"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/arrowdown"
+                android:background="@drawable/color_background_getsmscode"/>
+
+            <TextView
+                android:id="@+id/nrFragment_tv_province"
+                style="@style/fragment_nocode_edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="选择省份"
+                android:layout_toLeftOf="@id/arrowdown"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/nrFragment_sp_city"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:background="@drawable/color_background_register_popuwindow">
+
+
+
+            <ImageView
+                android:id="@+id/arrowdown1"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/arrowdown"
+                android:background="@drawable/color_background_getsmscode"/>
+
+            <TextView
+                android:id="@+id/nrFragment_tv_city"
+                style="@style/fragment_nocode_edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/arrowdown1"
+                android:text="选择城市"
+                android:layout_marginTop="1dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white">
+
+        <TextView
+            android:id="@+id/nrFragment_tv_choseStore"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择商铺" />
+
+        <View
+            android:id="@+id/nrFragment_v_line3"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/nrFragment_tv_choseStore"></View>
+
+        <RelativeLayout
+            android:id="@+id/nrFragment_sp_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/nrFragment_v_line3"
+            android:background="@drawable/color_background_register_popuwindow">
+
+
+            <ImageView
+                android:id="@+id/arrowdown3"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/arrowdown"
+                android:background="@drawable/color_background_getsmscode" />
+
+            <TextView
+                android:id="@+id/nrFragment_tv_store"
+                style="@style/fragment_nocode_edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="选择商铺"
+                android:layout_toLeftOf="@id/arrowdown3"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white"
+        android:layout_marginTop="12dp">
+        <include layout="@layout/view_line_nopadding"></include>
+        <TextView
+            android:id="@+id/nrFragment_tv_account"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account" />
+
+        <View
+            android:id="@+id/nrFragment_v_line4"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/nrFragment_tv_account"></View>
+
+
+
+        <EditText
+            android:id="@+id/nrFragment_et_phoneNumber"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/nrFragment_v_line4"
+            android:hint="@string/acountHint"
+            android:inputType="number" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white">
+
+        <TextView
+            android:id="@+id/nrFragment_tv_testCode"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码"
+
+            />
+        <Button
+            android:id="@+id/nrFragment_bt_getTestCode"
+            style="@style/get_SMS_Button"
+            android:layout_width="99dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/nrFragment_v_line6"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/nrFragment_bt_getTestCode"></View>
+
+        <EditText
+            android:id="@+id/nrFragment_et_testCode"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/nrFragment_v_line6"
+            android:layout_toLeftOf="@id/nrFragment_bt_getTestCode"
+            android:hint="请输入验证码"
+            android:inputType="number" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white"
+        android:layout_marginTop="12dp">
+        <include layout="@layout/view_line_nopadding"></include>
+        <TextView
+            android:id="@+id/nrFragment_tv_passWord"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/passWord"
+
+            />
+
+        <View
+            android:id="@+id/nrFragment_v_line5"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/nrFragment_tv_passWord"></View>
+
+        <EditText
+            android:id="@+id/nrFragment_passWord_input"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/nrFragment_v_line5"
+            android:hint="@string/passWordHint"
+            android:inputType="textPassword" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white">
+
+        <TextView
+            android:id="@+id/nrFragment_tv_passWord1"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码"
+
+            />
+
+        <View
+            android:id="@+id/nrFragment_v_line51"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/nrFragment_tv_passWord1"></View>
+
+        <EditText
+            android:id="@+id/nrFragment_passWord_input1"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/nrFragment_v_line51"
+            android:hint="@string/passWordHint"
+            android:inputType="textPassword" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <Button
+        android:id="@+id/nrFragment_iv_commit"
+        style="@style/forgetpassword_commit"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp" />
+</LinearLayout>

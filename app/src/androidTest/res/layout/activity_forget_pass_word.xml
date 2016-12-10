@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_dark_bg"
+    tools:context="com.haoqu.meiquan.activity.ForgetPassWordActivity" >
+
+
+    <LinearLayout
+        android:id="@+id/fpActivity_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fpactivity_imm_height"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:background="@color/color_pink">
+
+        <RelativeLayout
+            android:id="@+id/fpActivity_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" >
+
+            <ImageView
+                android:id="@+id/fpActivity_iv_back"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/back_arrow" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/titlebar_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="忘记密码"
+                    android:textColor="@color/background_white"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/titlebar_linel"
+                    android:layout_toLeftOf="@id/titlebar_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"/>
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/titlebar_liner"
+                    android:layout_toRightOf="@id/titlebar_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"/>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:layout_marginTop="12dp"
+        android:background="@color/background_white">
+
+        <include layout="@layout/view_line_nopadding"></include>
+
+        <TextView
+            android:id="@+id/fpActivity_tv_phone"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account" />
+
+
+        <View
+            android:id="@+id/fpActivity_v_line1"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/fpActivity_tv_phone"></View>
+
+        <EditText
+            android:id="@+id/fpActivity_et_phoneNumber"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/fpActivity_v_line1"
+            android:hint="@string/acountHint"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white">
+
+        <TextView
+            android:id="@+id/fpActivity_tv_smsCode"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码" />
+
+
+        <View
+            android:id="@+id/fpActivity_v_line2"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"></View>
+
+
+        <Button
+            android:id="@+id/fpActivity_bt_getTestCode"
+            style="@style/get_SMS_Button"
+            android:layout_width="99dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true" />
+
+
+        <EditText
+            android:id="@+id/fpActivity_et_testCode"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/fpActivity_bt_getTestCode"
+            android:layout_toRightOf="@id/fpActivity_v_line2"
+            android:hint="请输入验证码"
+            android:inputType="number"></EditText>
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:layout_marginTop="12dp"
+        android:background="@color/background_white">
+        <include layout="@layout/view_line_nopadding"></include>
+        <TextView
+            android:id="@+id/fpActivity_tv_passWord"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入密码" />
+
+
+        <View
+            android:id="@+id/fpActivity_v_line3"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"></View>
+
+
+        <EditText
+            android:id="@+id/fpActivity_et_newPassWord1"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/fpActivity_v_line3"
+            android:hint="@string/passWordHint"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rActivity_colomn_height"
+        android:background="@color/background_white">
+
+        <TextView
+            android:id="@+id/fpActivity_tv_passWord1"
+            style="@style/rActivity_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码" />
+
+
+        <View
+            android:id="@+id/fpActivity_v_line31"
+            style="@style/rActivity_verticalline"
+            android:layout_width="1dp"
+            android:layout_height="10dp"></View>
+
+
+        <EditText
+            android:id="@+id/fpActivity_et_newPassWord2"
+            style="@style/rActivity_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/fpActivity_v_line31"
+            android:hint="@string/passWordHint"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_nopadding"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+
+        <Button
+            android:id="@+id/fpActivity_bt_updateAcknowledge"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="33dp"
+            style="@style/forgetpassword_commit"
+            />
+    </LinearLayout>
+
+</LinearLayout>

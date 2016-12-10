@@ -1,0 +1,16 @@
+<resources>
+
+    <!--
+        Base application theme for API 19+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v19/styles.xml on API 19+ 
+
+    -->
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+
+        <!-- API 19 theme customizations can go here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        
+    </style>
+
+</resources>
